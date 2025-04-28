@@ -1,0 +1,23 @@
+Aya Elnaser Salah-4221028
+How I did my code:
+
+1-	Initialize the RNN:
+Weight and Bias
+Start with hidden state”0”
+
+2-	Forward pass:
+-one-hot vector
+” is a way to represent words as numbers so that a computer can process them”
+-Update the hidden state using tanh
+-Compute output probabilities for the next word
+
+3-	Training:
+-Cross entropy loss for the predicted word
+-Update weights using gradient descent
+-Only predict the 4th word given the first 3 words
+
+4-	Data Preparation: 
+-Split text into sequences of 3 words → predict the 4th
+-(word_to_idx)
+5-	 Prediction:
+-Feed a 3-word sequence → get the most probable next word
